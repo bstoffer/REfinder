@@ -1,0 +1,20 @@
+[filters]
+max_price = 600000
+min_acres = 5
+must_have_any = ["river","brook","pond","lake","waterfront","stream","barn","pasture","orchard","homestead","farm"]
+exclude_any = ["seasonal","land only","time-share","auction"]
+
+[scoring]
+price_weight = 2.0
+acre_weight  = 2.0
+water_weight = 2.0
+farm_weight  = 1.5
+proximity_weight = 1.0  # used for highway/grocery keywords
+
+[keywords]
+water = ["river","brook","pond","lake","waterfront","stream","shore"]
+farm  = ["farm","homestead","pasture","barn","goats","chickens","orchard","maple","sugarbush"]
+proximity = ["min to I-","near I-","Hannaford","Shaw's","Market Basket","Costco","Home Depot","Turnpike","US-","VT-","ME-"]
+
+[mail]
+gmail_label = "Listings"
